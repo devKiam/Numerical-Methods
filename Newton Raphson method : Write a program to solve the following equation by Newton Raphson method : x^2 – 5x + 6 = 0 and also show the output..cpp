@@ -45,3 +45,28 @@ int main()
         x = Xn_plus_one;
     }
 }
+
+// According to NRM,
+// Xn+1 = Xn^2 - 6 / 2Xn - 5
+// Applying Convergence,
+// Let, initial value of X = 1
+// so, convergence = 0.44
+// Which is less than 1, so X0 = 1
+
+// X0 = 1, putting this value in NRM eqn,
+// X1 = 1.67
+// Now, |Xn+1 - Xn| = 0.67
+// which is greater than the desired accuracy, therefore we can proceed
+// X1 = 1.67, putting this value in NRM eqn,
+// X2 = 1.93
+// Now, |Xn+1 - Xn| = 0.27
+// which is greater than the desired accuracy, therefore we can proceed
+// X2 = 1.93, putting this value in NRM eqn,
+// X3 = 2
+// Now, |Xn+1 - Xn| = 0.063
+// which is greater than the desired accuracy, therefore we can proceed
+// X3 = 2, putting this value in NRM eqn,
+// X4 = 2
+// Now, |Xn+1 - Xn| = 0.0039
+// equal to the desired accuracy, so ANS : 2
+// Process finished with exit code 0
